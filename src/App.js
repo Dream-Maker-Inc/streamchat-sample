@@ -32,7 +32,7 @@ export default function App() {
     init()
 
     if (client) return () => client.disconnectUser()
-  }, [])
+  }, [client])
 
   if (!client) return <LoadingIndicator />
 
